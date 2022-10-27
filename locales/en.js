@@ -93,6 +93,7 @@ export default {
             OpenBadgeCredential: "Open Badge V3",
             Europass: "Europass",
             LegalPerson: "Gaia-X Legal Person",
+            HomeOwnership: "Home Ownership",
         },
         REGISTRATION_NUMBER: 'Registration number',
         LEGALLY_BINDING_NAME: 'Legally binding name',
