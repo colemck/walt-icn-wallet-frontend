@@ -48,6 +48,10 @@ export default {
   },
   async asyncData ({ $axios, query }) {
     if(query.sessionId != null) {
+      // if (isLocalStorage() /* function to detect if localstorage is supported*/) {
+        localStorage.setItem('issuanceSessionId', query.sessionId)
+      // }
+      
       const issuanceSessionInfo = await $axios.$get("/api/wallet/issuance/info", { params: query })
       return { issuanceSessionInfo }
     }

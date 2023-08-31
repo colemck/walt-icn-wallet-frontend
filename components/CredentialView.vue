@@ -13,6 +13,7 @@
     <Europass v-if="credential.type[credential.type.length-1] == 'Europass'" :credential="credential" />
     <OpenBadgeCredential v-if="credential.type[credential.type.length-1] == 'OpenBadgeCredential'" :credential="credential" />
     <LegalPerson v-if="credential.type[credential.type.length-1] == 'LegalPerson'" :credential="credential" />
+    <HomeOwnership v-if="credential.type[credential.type.length-1] == 'HomeOwnership'" :credential="credential" />
   </div>
 </template>
 
