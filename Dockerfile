@@ -1,4 +1,4 @@
-FROM node:14 as buildstage
+FROM node:16 as buildstage
 COPY ./package.json /package.json
 RUN yarn install
 COPY . /
